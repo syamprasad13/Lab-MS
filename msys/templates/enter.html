@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div class="container">  
+    
+    <h3>Lab Maintanence System</h3>
+    <h4>MEC</h4>
+  <form method="post">{% csrf_token %}
+    <fieldset>
+     <input placeholder="System_No:" type="text" tabindex="1" required autofocus>
+     </fieldset>
+
+    <fieldset>
+      <input placeholder="Date" type="date" tabindex="2" required autofocus>
+    </fieldset>
+    
+    <fieldset>
+      <input placeholder="Make" type="text" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Model_No" type="text" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Quantity" type="number" tabindex="5" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Particulars" type="text" tabindex="6" required></textarea>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Remarks" type="text" tabindex="7" required></textarea>
+    </fieldset>
+
+    <fieldset>
+   </form>
+     <!--<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>-->
+     <button name="submit" class="btn btn-default">Submit</button>
+    </fieldset>
+  
+    <p class="copyright">Designed by <a href="mec.ac.in" target="_blank" title="MEC">MEC</a></p>
+
+  
+</div>
+</body>
+</html>
+
+

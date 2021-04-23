@@ -1,0 +1,48 @@
+
+
+{% comment %} {% load staticfiles %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+{% block branding %}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">
+        <img src="{% static 'umsra_logo.png' %}" height="40px" />
+    </a>
+</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %} {% endcomment %}
+<!----
+{% extends "admin/base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}{{ title }} | {{ site_title|default:_('Django site admin') }}{% endblock %}
+
+<!--{% block branding %}
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+{% block branding%}
+<h1 id="site-name">
+    <a href="{% url 'admin:index' %}">
+        <img src="{% static 'mec.png' %}" height="40px" />
+    </a>
+</h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}-->
+
+{% extends 'admin/base.html'%}
+{% load static %}
+{% block branding %}
+    <h1 id="head">
+        <img src="{% static '/img/mec.jpg' %}"
+             alt="LAB ms" height="50"
+             width="80" class="brand_img" >
+        MEC
+    </h1>
+{% endblock %}
+{% block extrastyle %}
+    <link rel="stylesheet" href="{% static 'css/admin.css' %}">
+{% endblock %}
